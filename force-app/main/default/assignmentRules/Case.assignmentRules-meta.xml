@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Pagos_Urgentes</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseOrigin_SEL__c</field>
+                <operation>equals</operation>
+                <value>Customer Portal - Cases</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CaseType_SEL__c</field>
+                <operation>equals</operation>
+                <value>Problem</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consultas_Facturacion</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseOrigin_SEL__c</field>
+                <operation>equals</operation>
+                <value>Customer Portal - Cases</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CaseType_SEL__c</field>
+                <operation>equals</operation>
+                <value>Question or Inquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Reclamaciones_Quejas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseOrigin_SEL__c</field>
+                <operation>equals</operation>
+                <value>Customer Portal - Cases</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CaseType_SEL__c</field>
+                <operation>equals</operation>
+                <value>Complaint</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PlanesPago_Retencion</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseOrigin_SEL__c</field>
+                <operation>equals</operation>
+                <value>Customer Portal - Cases</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CaseType_SEL__c</field>
+                <operation>equals</operation>
+                <value>My Payments or Payment Plan</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Informacion_General</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseOrigin_SEL__c</field>
+                <operation>equals</operation>
+                <value>Customer Portal - Cases</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CaseType_SEL__c</field>
+                <operation>equals</operation>
+                <value>Other Reason</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>
